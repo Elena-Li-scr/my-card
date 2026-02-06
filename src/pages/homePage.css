@@ -1,0 +1,23 @@
+.home-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-name {
+  font-size: var(--fs-body);
+  margin-top: 10px;
+}
+
+.home-page-title {
+  font-size: var(--fs-h1);
+  text-align: center;
+  margin: 20px 0;
+}
+
+.home-page-subtitle {
+  font-size: var(--fs-h2);
+  text-align: center;
+}

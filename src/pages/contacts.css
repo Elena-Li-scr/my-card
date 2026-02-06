@@ -1,0 +1,42 @@
+.contacts {
+  width: 100%;
+}
+
+
+.contacts .contact-slide {
+  width: auto;
+  height: 80px;
+}
+
+.contact-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 20px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  border: 0;
+  font: inherit;
+  color: inherit;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button.contact-card {
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-icon,
+.contact-card .icon {
+  width: 1.2em;
+  height: 1.2em;
+  display: flex;
+  align-items: center;
+}

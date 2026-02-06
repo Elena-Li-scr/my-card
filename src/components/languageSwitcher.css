@@ -1,0 +1,21 @@
+.switcher-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5%;
+}
+
+.switcher-container {
+  width: 100%;
+}
+
+button {
+  font-weight: 600;
+  font-size: clamp(14px, 2vw, 45px);
+  color: #586467;
+}
+
+button:disabled {
+  color: white;
+}

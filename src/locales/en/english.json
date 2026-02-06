@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contacts"
+  },
+  "home": {
+    "name": "Elena",
+    "title": "Frontend Developer",
+    "subtitle": "Create fast and user-friendly websites tailored to your goals"
+  },
+  "contacts": {
+    "copy": "Copied"
+  }
+}
