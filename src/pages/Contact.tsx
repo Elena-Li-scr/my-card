@@ -1,11 +1,11 @@
 import { Mail, Phone } from 'lucide-react';
 import { FaTelegramPlane, FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { useTranslation } from 'react-i18next';
-import { Swiper, SwiperSlide } from "swiper/react";
 import type { ReactNode } from 'react';
+import { useState } from 'react';
+import PopUp from '../components/PopUp';
 
 import './contacts.css';
-import 'swiper/css';
+
 
 type ContactItem = {
   icon: ReactNode;
@@ -15,7 +15,7 @@ type ContactItem = {
 };
 
 export default function Contact() {
-  const { t } = useTranslation();
+  const [showPopUp, setShowPopUp] = useState(false);
   const contacts: ContactItem[] = [
     {
       icon: <Mail className="contact-icon" />,
@@ -54,45 +54,41 @@ export default function Contact() {
   const copyToClipboard = async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      alert(t('contacts.copy'));
+      setShowPopUp(true);
     } catch (err) {
       console.error('Copy failed', err);
     }
   };
   return (
     <div className="contacts">
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={'auto'}
-        grabCursor={true}
+      {showPopUp && <PopUp onClick={() => setShowPopUp(false)} />}
 
-      >
-        {contacts.map((item, index) => (
-          <SwiperSlide key={index} className="contact-slide">
-            {item.href ? (
-              <a
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-card"
-              >
-                <span className="icon">{item.icon}</span>
-                <span className="text">{item.text}</span>
-              </a>
-            ) : (
-              <button
-                type="button"
-                className="contact-card"
-                onClick={() => copyToClipboard(item.copyValue!)}
-              >
-                <span className="icon">{item.icon}</span>
-                <span className="text">{item.text}</span>
-              </button>
-            )}
-          </SwiperSlide>
-        ))}
+      {contacts.map((item, index) => (
+        item.href ? (
+          <a
+            href={item.href}
+            key={index}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card"
+          >
+            <span className="icon">{item.icon}</span>
+            <span className="text">{item.text}</span>
+          </a>
+        ) : (
+          <button
+            type="button"
+            key={index}
+            className="contact-card"
+            onClick={() => copyToClipboard(item.copyValue!)}
+          >
+            <span className="icon">{item.icon}</span>
+            <span className="text">{item.text}</span>
+          </button>
+        )
 
-      </Swiper>
+      ))}
+
     </div>
   );
 }

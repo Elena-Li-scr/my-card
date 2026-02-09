@@ -4,6 +4,12 @@
   --fs-body: clamp(14px, 2vw, 48px);
   --fs-h1: clamp(18px, 2vw, 48px);
   --fs-h2: clamp(16px, 2vw, 48px);
+  --border-color: #2a302f;
+  --text-color: #8b9597;
+  --text-color-light: #e1e8e9;
+  --text-color-dark: #0a0e0d;
+  --bg-color-light: #e1e8e9;
+  --bg-color-dark: #0a0e0d;
 }
 
 * {
@@ -16,8 +22,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: var(--fs-body);
   font-weight: 500;
-  background-color: #0a0e0d;
-  color: #8b9597;
+  background-color: var(--bg-color-dark);
+  color: var(--text-color);
 }
 
 .main-container {

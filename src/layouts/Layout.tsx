@@ -11,8 +11,8 @@ export default function Layout() {
 
         <LanguageSwitcher />
         <nav className="navigation">
-          <NavLink to="/">{t("nav.home")}</NavLink>
           <NavLink to="/about">{t("nav.about")}</NavLink>
+          <NavLink to="/portfolio">{t("nav.portfolio")}</NavLink>
           <NavLink to="/contact">{t("nav.contact")}</NavLink>
         </nav>
 

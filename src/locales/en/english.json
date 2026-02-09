@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Home",
+    "portfolio": "Portfolio",
     "about": "About",
     "contact": "Contacts"
   },
@@ -11,5 +11,18 @@
   },
   "contacts": {
     "copy": "Copied"
+  },
+  "about": {
+    "main": "An experienced Frontend Developer creating modern, fast, and user-friendly websites that help businesses grow and achieve their goals. My work is about turning ideas into clean, functional, and visually appealing interfaces.",
+    "subtitle": "What I can offer",
+    "points": [
+      "Website layout of any complexity;",
+      "Responsive and mobile-friendly design;",
+      "API and database integration;",
+      "Performance and speed optimization;",
+      "Maintenance and improvement of existing projects."
+    ],
+    "tech": "Main tools and technologies",
+    "other": "Other tools"
   }
 }
