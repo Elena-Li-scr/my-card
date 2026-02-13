@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 20px 20px 20px;
 }
 
 .my-name {
@@ -20,4 +21,36 @@
 .home-page-subtitle {
   font-size: var(--fs-h2);
   text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 6em;
+  margin-top: 30px;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 5px;
+}
+
+.start-button {
+  font-size: var(--fs-body);
+  color: var(--text-color-light);
+}
+
+.button-container:hover {
+  -webkit-box-shadow: 0px 0px 15px 10px #ffffff;
+  box-shadow: 0px 0px 15px 10px #ffffff;
+  gap: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .button-container {
+    gap: 10px;
+  }
 }

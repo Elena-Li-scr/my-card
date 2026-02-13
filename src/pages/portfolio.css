@@ -1,0 +1,21 @@
+.portfolio {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    position: relative;
+
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolio {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -7,7 +7,8 @@
   "home": {
     "name": "엘레나",
     "title": "프론트엔드 개발자",
-    "subtitle": "고객의 목적에 맞는 빠르고 사용하기 편한 웹사이트를 제작합니다"
+    "subtitle": "고객의 목적에 맞는 빠르고 사용하기 편한 웹사이트를 제작합니다",
+    "start": "시작하기"
   },
   "contacts": {
     "copy": "복사"
@@ -24,5 +25,23 @@
     ],
     "tech": "주요 기술 스택",
     "other": "기타 기술"
+  },
+  "port": {
+    "view": "자세히 보기",
+    "eggFarm": {
+      "description": "계란 판매 체인점 웹사이트",
+      "fullDescription": "농산물 직거래 매장 네트워크의 기업 웹사이트입니다. 사용자는 다양한 상품을 조회하고 비교할 수 있으며, 공급업체에 대한 상세 정보를 확인하고 편리한 인터페이스를 통해 온라인 주문을 진행할 수 있습니다. 모바일 기기 및 태블릿에 최적화된 반응형 디자인을 적용하였습니다.",
+      "stack": "스텍: React, Vite, TypeScript, HTML, CSS, Zustand, Git, GitHub."
+    },
+    "morago": {
+      "description": "번역가 검색 애플리케이션",
+      "fullDescription": "러시아어를 사용하는 외국인을 위한 통번역사 매칭 플랫폼입니다. 사용자는 통번역사를 신속하게 검색하고 직접 소통할 수 있으며, 서비스 이용 후 리뷰를 작성하고 전문가의 업무 품질을 평가할 수 있습니다. 또한 플랫폼 내에서 안전하게 결제가 가능합니다. 일반 사용자, 통번역사, 관리자용으로 각각 분리된 인터페이스를 설계 및 현하였습니다. 모바일 기기 및 태블릿 환경에 최적화된 반응형 디자인을 적용하였습니다.",
+      "stack": "스텍: React, Vite, TypeScript, HTML, CSS, Zustand, Socket.IO, WebRTC, Docker, MySQL, Git, GitHub."
+    },
+    "film": {
+      "description": "영화 검색 애플리케이션",
+      "fullDescription": "TMDB API를 기반으로 개발한 영화 검색 및 평가 웹 애플리케이션입니다. 사용자는 실시간으로 영화를 검색하고 상세 정보를 확인할 수 있으며, 영화에 대한 평점을 남길 수 있습니다. 서버 사이드 데이터 로딩(Server-Side Data Fetching), 서버 기반 페이지네이션, guest session을 활용한 평점 시스템을 구현하였습니다.또한 인터페이스를 ‘검색(Search)’ 탭과 ‘평가한 영화(Rated)’ 탭으로 분리하여 사용자 경험을 개선하였습니다.",
+      "stack": "스텍: Next.js (App Router), TypeScript, Ant Design, TMDB API"
+    }
   }
 }

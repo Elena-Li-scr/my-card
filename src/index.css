@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-  --fs-body: clamp(14px, 2vw, 48px);
+  --fs-body: clamp(13px, 2vw, 35px);
   --fs-h1: clamp(18px, 2vw, 48px);
   --fs-h2: clamp(16px, 2vw, 48px);
   --border-color: #2a302f;

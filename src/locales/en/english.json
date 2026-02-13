@@ -7,7 +7,8 @@
   "home": {
     "name": "Elena",
     "title": "Frontend Developer",
-    "subtitle": "Create fast and user-friendly websites tailored to your goals"
+    "subtitle": "Create fast and user-friendly websites tailored to your goals",
+    "start": "Start"
   },
   "contacts": {
     "copy": "Copied"
@@ -24,5 +25,23 @@
     ],
     "tech": "Main tools and technologies",
     "other": "Other tools"
+  },
+  "port": {
+    "view": "Show more",
+    "eggFarm": {
+      "description": "Website of a chain of stores selling eggs",
+      "fullDescription": "Corporate website for a farm product retail chain. Users can browse and compare products, access detailed information about suppliers, and place online orders through a user-friendly interface. The website is fully responsive and optimized for mobile devices and tablets.",
+      "stack": "Stack: React, Vite, TypeScript, HTML, CSS, Zustand, Git, GitHub."
+    },
+    "morago": {
+      "description": "Application for finding translators",
+      "fullDescription": "An application designed for Russian-speaking foreigners to quickly find and connect with translators. Users can search for translators, communicate directly with them, leave reviews, rate service quality, and make secure payments within the platform. Separate interfaces were developed for users, translators, and administrators. The application is fully responsive and optimized for mobile devices and tablets.",
+      "stack": "Stack: React, Vite, TypeScript, HTML, CSS, Zustand, Socket.IO, WebRTC, Docker, MySQL, Git, GitHub."
+    },
+    "film": {
+      "description": "Application for finding movies",
+      "fullDescription": "A movie search and rating web application built using the TMDB API. Users can search for movies in real time, view detailed information, and rate them. The application implements server-side data fetching, server-side pagination, and a rating system based on guest sessions. The interface is divided into two main tabs: `Search` and `Rated` to enhance user experience.",
+      "stack": "Next.js (App Router), TypeScript, Ant Design, TMDB API"
+    }
   }
 }

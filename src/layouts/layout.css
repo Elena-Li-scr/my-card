@@ -8,7 +8,7 @@
 }
 
 .navigation {
-  width: 70%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,11 @@
 
 .navigation a {
   text-decoration: none;
-  font-size: clamp(14px, 2vw, 45px);
+  font-size: clamp(14px, 2vw, 48px);
+}
+
+.navigation a.active {
+  color: white;
 }
 
 .main {
