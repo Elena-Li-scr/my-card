@@ -2,9 +2,10 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { supportedLngs, type SupportedLng } from "../i18n";
 import "./languageSwitcher.css"
+import { motion } from "framer-motion";
 
 const labels: Record<SupportedLng, string> = {
-  ru: "RU",  
+  ru: "RU",
   en: "EN",
   ko: "KO",
 };
@@ -16,10 +17,10 @@ export default function LanguageSwitcher() {
 
   const setLang = async (lng: SupportedLng) => {
     if (lng === current) return;
-    await i18n.changeLanguage(lng); 
+    await i18n.changeLanguage(lng);
   };
 
-  useEffect(() => {   
+  useEffect(() => {
     const lng = (i18n.resolvedLanguage || i18n.language) as SupportedLng;
     document.documentElement.lang = lng;
   }, [i18n.resolvedLanguage, i18n.language]);
@@ -27,14 +28,14 @@ export default function LanguageSwitcher() {
   return (
     <div className="switcher-container">
       {supportedLngs.map((lng) => (
-        <button
+        <motion.button
           key={lng}
           onClick={() => setLang(lng)}
           disabled={current === lng}
-          aria-pressed={current === lng}    
+          aria-pressed={current === lng}
         >
           {labels[lng]}
-        </button>
+        </motion.button>
       ))}
     </div>
   );

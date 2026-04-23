@@ -46,7 +46,7 @@ export const portItems: Record<number, PortfolioItem> = {
     2: {
         title: "Morago",
         fullDescription: "port.morago.fullDescription",
-        github: "https://github.com/Elena-Li-scr/morago-front-end",
+        github: "https://github.com/Elena-Li-scr/morago",
         stack: "port.morago.stack",
         screenshots: ["/assets/morago/morago1.png", "/assets/morago/morago2.png", "/assets/morago/morago3.png", "/assets/morago/morago4.png", "/assets/morago/morago5.png", "/assets/morago/morago6.png", "/assets/morago/morago7.png", "/assets/morago/morago8.png", "/assets/morago/morago9.png", "/assets/morago/morago10.png", "/assets/morago/morago11.png", "/assets/morago/morago15.png", "/assets/morago/morago16.png", "/assets/morago/morago17.png"]
     },
